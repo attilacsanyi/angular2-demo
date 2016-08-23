@@ -27,6 +27,16 @@
     "zone.js": "0.6.12"
   },
   "devDependencies": {
+    "@angular2-material/button": "2.0.0-alpha.7-4",
+    "@angular2-material/card": "2.0.0-alpha.7-4",
+    "@angular2-material/core": "2.0.0-alpha.7-4",
+    "@angular2-material/icon": "2.0.0-alpha.7-4",
+    "@angular2-material/input": "2.0.0-alpha.7-4",
+    "@angular2-material/toolbar": "2.0.0-alpha.7-4",
+    "@ngrx/core": "1.0.2",
+    "@ngrx/store": "2.1.2",
+    "@ngrx/store-devtools": "2.0.0-beta.1",
+    "@ngrx/store-log-monitor": "2.0.0-beta.1",
     "@types/jasmine": "^2.2.30",
     "@types/protractor": "^1.5.16",
     "angular-cli": "1.0.0-beta.11-webpack.2",

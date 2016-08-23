@@ -1,20 +1,25 @@
-/* tslint:disable:no-unused-variable */
+import {inject } from '@angular/core/testing';
+import {TestComponentBuilder, addProviders} from '@angular/core/testing';
 
-import { addProviders, async, inject } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 
-describe('App: Angular2Demo', () => {
-  beforeEach(() => {
-    addProviders([AppComponent]);
-  });
+describe('AppComponent', () => {
+  let builder: TestComponentBuilder;
 
-  it('should create the app',
-    inject([AppComponent], (app: AppComponent) => {
-      expect(app).toBeTruthy();
-    }));
+  beforeEach(() => addProviders([AppComponent]));
+  beforeEach(inject([TestComponentBuilder], function (tcb: TestComponentBuilder) { builder = tcb; }));
 
-  it('should have as title \'Angular2 Demo!\'',
-    inject([AppComponent], (app: AppComponent) => {
-      expect(app.title).toEqual('Angular2 Demo!');
-    }));
+  it('should inject the app component',
+    inject([AppComponent], (component: AppComponent) => {
+      expect(component).toBeTruthy();
+    })
+  );
+
+  it('should have app title of "Hello Angular 2 !"',
+    inject([AppComponent], (component: AppComponent) => {
+      component.ngOnInit();
+      expect(component.title).toEqual('Hello Angular 2 !');
+    })
+  );
+
 });

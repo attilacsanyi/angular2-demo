@@ -1,0 +1,8 @@
+import {RouterModule} from '@angular/router';
+
+import {CounterComponent} from './counter.component';
+
+export const routing = RouterModule.forChild([
+  // { path: '', component: CounterComponent }
+  { path: 'counter', component: CounterComponent }
+]);
