@@ -2,7 +2,7 @@ import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 import {Observable} from 'rxjs/Rx';
 
 import {Store} from '@ngrx/store';
-import {AppState}  from '../core/states';
+import {AppState}  from '../app.store';
 import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from './counter.action';
 
 @Component({

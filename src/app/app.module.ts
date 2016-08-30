@@ -9,12 +9,9 @@ import {CounterModule} from './counter/counter.module';
 
 // Components
 import {AppComponent} from './app.component';
-import {StoreLogMonitorComponent} from '@ngrx/store-log-monitor';
-
-// Providers
-import {STORE_PROVIDERS} from './core/states';
 
 import {routing} from './app.routing';
+import {store} from './app.store';
 
 @NgModule({
     imports: [
@@ -23,15 +20,14 @@ import {routing} from './app.routing';
 
         HomeModule, CounterModule,
         routing,
-        SharedModule.forRoot()
+        SharedModule.forRoot(),
+        store
     ],
     declarations: [
-        AppComponent,
-        StoreLogMonitorComponent
+        AppComponent
     ],
     providers: [
         { provide: LocationStrategy, useClass: HashLocationStrategy },
-        STORE_PROVIDERS
     ],
     entryComponents: [AppComponent],
     bootstrap: [AppComponent]
