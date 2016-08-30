@@ -1,0 +1,9 @@
+$myColour: yellow;
+
+.example-fill-remaining-space {
+  flex: 1 1 auto;
+}
+
+.coloured {
+  color: $myColour;
+}
