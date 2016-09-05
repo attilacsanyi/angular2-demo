@@ -7,8 +7,8 @@ describe('angular2-demo App', function() {
     page = new Angular2DemoPage();
   });
 
-  it('should display message saying \'Angular2 Demo!\'', () => {
+  it('should display message saying app works', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Angular2 Demo!');
+    expect(page.getParagraphText()).toEqual('app works!');
   });
 });

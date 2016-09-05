@@ -1,12 +1,12 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 
 // Modules
-import {SharedModule} from '../shared/shared.module';
+import { SharedModule } from '../shared/shared.module';
 
 // Components
-import {CounterComponent} from './counter.component';
+import { CounterComponent } from './counter.component';
 
-import {routing} from './counter.routing';
+import { routing } from './counter.routing';
 
 @NgModule({
   imports: [SharedModule, routing],

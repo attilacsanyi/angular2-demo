@@ -2,7 +2,6 @@ import {NgModule, ModuleWithProviders} from '@angular/core';
 
 // Angular
 import {CommonModule} from '@angular/common';
-import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 
@@ -18,7 +17,7 @@ import {MdInputModule} from '@angular2-material/input';
     declarations: [],
     exports: [
         // Angular
-        CommonModule, RouterModule, FormsModule, HttpModule,
+        CommonModule, FormsModule, HttpModule,
 
         // Material
         MdToolbarModule, MdButtonModule, MdIconModule,
