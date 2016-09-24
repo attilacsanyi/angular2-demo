@@ -1,16 +1,16 @@
-import {NgModule, ModuleWithProviders} from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 
 // Angular
-import {CommonModule} from '@angular/common';
-import {FormsModule} from '@angular/forms';
-import {HttpModule} from '@angular/http';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 // Material
-import {MdToolbarModule} from '@angular2-material/toolbar';
-import {MdButtonModule} from '@angular2-material/button';
-import {MdIconModule} from '@angular2-material/icon';
-import {MdCardModule} from '@angular2-material/card';
-import {MdInputModule} from '@angular2-material/input';
+import { MdToolbarModule } from '@angular2-material/toolbar';
+import { MdButtonModule } from '@angular2-material/button';
+import { MdIconModule, MdIconRegistry } from '@angular2-material/icon';
+import { MdCardModule } from '@angular2-material/card';
+import { MdInputModule } from '@angular2-material/input';
 
 @NgModule({
     imports: [CommonModule],
@@ -22,6 +22,9 @@ import {MdInputModule} from '@angular2-material/input';
         // Material
         MdToolbarModule, MdButtonModule, MdIconModule,
         MdCardModule, MdInputModule,
+    ],
+    providers: [
+        MdIconRegistry
     ]
 })
 export class SharedModule {

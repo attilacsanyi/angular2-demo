@@ -1,6 +1,9 @@
 import { TestBed, async } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
 import { MdToolbarModule } from '@angular2-material/toolbar';
+import { MdIconModule, MdIconRegistry } from '@angular2-material/icon';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { StoreLogMonitorModule } from '@ngrx/store-log-monitor';
 import { routesMockProviders } from './shared/mocks';
 import { AppComponent } from './app.component';
 
@@ -8,9 +11,14 @@ describe('App: Angular2Demo', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterModule, MdToolbarModule],
+      imports: [
+        RouterModule,
+        MdToolbarModule, MdIconModule,
+        StoreDevtoolsModule,
+        StoreLogMonitorModule
+      ],
       declarations: [AppComponent],
-      providers: [...routesMockProviders]
+      providers: [...routesMockProviders, MdIconRegistry]
     });
   });
 
