@@ -8,7 +8,6 @@ import 'hammerjs';
 import {BrowserModule} from '@angular/platform-browser';
 import {SharedModule} from './shared/shared.module';
 import {HomeModule} from './home/home.module';
-import {CounterModule} from './counter/counter.module';
 
 // Components
 import {AppComponent} from './app.component';
@@ -21,7 +20,7 @@ import {store} from './app.store';
         // Angular
         BrowserModule,
 
-        HomeModule, CounterModule,
+        HomeModule,
         routing,
         SharedModule.forRoot(),
         store
