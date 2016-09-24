@@ -1,9 +1,9 @@
-import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
-import {Observable} from 'rxjs/Rx';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
 
-import {Store} from '@ngrx/store';
-import {AppState}  from '../app.store';
-import {IncrementCounterAction, DecrementCounterAction, ResetCounterAction} from './counter.action';
+import { Store } from '@ngrx/store';
+import { AppState } from '../app.store';
+import { IncrementCounterAction, DecrementCounterAction, ResetCounterAction } from './counter.action';
 
 @Component({
   templateUrl: 'counter.component.html',

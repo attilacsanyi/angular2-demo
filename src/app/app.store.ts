@@ -3,7 +3,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 
 // Reducers
-import {counterReducer} from './counter/counter.reducer';
+import { counterReducer } from './counter/counter.reducer';
 
 export interface AppState {
   counter: number;

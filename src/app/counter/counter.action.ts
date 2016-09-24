@@ -1,4 +1,4 @@
-import {BaseAction} from '../shared/models';
+import { BaseAction } from '../shared/models';
 
 // Counter Actions
 const PREFIX = '[Counter]';

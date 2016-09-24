@@ -1,4 +1,4 @@
-import {Action} from '@ngrx/store';
+import { Action } from '@ngrx/store';
 
 export class BaseAction implements Action {
   constructor(private _type: string) { }
