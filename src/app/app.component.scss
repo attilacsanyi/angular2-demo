@@ -1,4 +1,6 @@
-$myColour: yellow;
+@import '../styles';
+
+$myColour: md-color($accent);
 
 .example-fill-remaining-space {
   flex: 1 1 auto;

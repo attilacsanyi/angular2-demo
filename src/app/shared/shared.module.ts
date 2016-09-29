@@ -6,25 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 // Material
-import { MdToolbarModule } from '@angular2-material/toolbar';
-import { MdButtonModule } from '@angular2-material/button';
-import { MdIconModule, MdIconRegistry } from '@angular2-material/icon';
-import { MdCardModule } from '@angular2-material/card';
-import { MdInputModule } from '@angular2-material/input';
+import { MaterialModule } from '@angular/material';
 
 @NgModule({
-    imports: [CommonModule],
+    imports: [CommonModule, MaterialModule.forRoot()],
     declarations: [],
     exports: [
         // Angular
         CommonModule, FormsModule, HttpModule,
 
         // Material
-        MdToolbarModule, MdButtonModule, MdIconModule,
-        MdCardModule, MdInputModule,
-    ],
-    providers: [
-        MdIconRegistry
+        MaterialModule
     ]
 })
 export class SharedModule {

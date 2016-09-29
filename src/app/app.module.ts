@@ -1,9 +1,6 @@
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-/** TODO: remove when work-around is not needed*/
-import 'hammerjs';
-
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from './shared/shared.module';
