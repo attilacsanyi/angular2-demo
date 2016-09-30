@@ -1,6 +1,5 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TestBed, async } from '@angular/core/testing';
-import { routesMockProviders } from './shared/mocks';
 import { AppComponent } from './app.component';
 
 describe('App: Angular2Demo', () => {
@@ -9,7 +8,6 @@ describe('App: Angular2Demo', () => {
     TestBed.configureTestingModule({
       imports: [],
       declarations: [AppComponent],
-      providers: [...routesMockProviders],
       schemas: [NO_ERRORS_SCHEMA]
     });
   });
