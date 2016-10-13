@@ -11,5 +11,7 @@
     "**/bower_components": true,
     "**/*.d.ts": true,
     "**/*.js": true
-  }
+  },
+  // Format a file on save. A formatter must be available, the file must not be auto-saved, and editor must not be shutting down.
+  "editor.formatOnSave": true
 }
