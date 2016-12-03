@@ -36,7 +36,7 @@
     "@ngrx/store-log-monitor": "3.0.2",
     "@types/hammerjs": "2.0.33",
     "@types/jasmine": "2.5.38",
-    "angular-cli": "1.0.0-beta.20-4",
+    "angular-cli": "1.0.0-beta.21",
     "codelyzer": "0.0.26",
     "jasmine-core": "2.5.2",
     "jasmine-spec-reporter": "2.7.0",
