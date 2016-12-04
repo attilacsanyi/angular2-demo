@@ -1,4 +1,3 @@
-import { StoreLogMonitorModule, useLogMonitor } from '@ngrx/store-log-monitor';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreModule } from '@ngrx/store';
 
@@ -11,7 +10,13 @@ export interface AppState {
 
 export const store: any[] = [
 
-  // Store
+  /**
+   * StoreModule.provideStore is imported once in the root module, accepting a reducer
+   * function or object map of reducer functions. If passed an object of
+   * reducers, combineReducers will be run creating your application
+   * meta-reducer. This returns all providers for an @ngrx/store
+   * based application.
+   */
   StoreModule.provideStore(
     {
       counter: counterReducer
@@ -20,12 +25,15 @@ export const store: any[] = [
     }
   ),
 
-  // Store Devtools
-  StoreDevtoolsModule.instrumentStore({
-    monitor: useLogMonitor({
-      visible: false,
-      position: 'right'
-    })
-  }),
-  StoreLogMonitorModule
+  /**
+   * Store devtools instrument the store retaining past versions of state
+   * and recalculating new states. This enables powerful time-travel
+   * debugging.
+   * 
+   * To use the debugger, install the Redux Devtools extension for either
+   * Chrome or Firefox
+   * 
+   * See: https://github.com/zalmoxisus/redux-devtools-extension
+   */
+  StoreDevtoolsModule.instrumentOnlyWithExtension(),
 ];

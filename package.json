@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "@ngrx/store-devtools": "3.2.2",
-    "@ngrx/store-log-monitor": "3.0.2",
     "@types/hammerjs": "2.0.33",
     "@types/jasmine": "2.5.38",
     "angular-cli": "1.0.0-beta.21",
