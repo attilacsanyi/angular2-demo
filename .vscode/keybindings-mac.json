@@ -6,16 +6,16 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+d",
+        "key": "cmd+x",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+[",
+        "key": "alt+cmd+left",
         "command": "workbench.action.navigateBack"
     },
     {
-        "key": "cmd+]",
+        "key": "alt+cmd+right",
         "command": "workbench.action.navigateForward"
     },
     {
@@ -24,7 +24,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+o",
+        "key": "cmd+n",
         "command": "workbench.action.quickOpen"
     }
 ]
