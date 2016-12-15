@@ -6,7 +6,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "cmd+x",
+        "key": "cmd+d",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus"
     },
@@ -26,5 +26,9 @@
     {
         "key": "cmd+n",
         "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+z",
+        "command": "workbench.action.toggleZenMode"
     }
 ]
