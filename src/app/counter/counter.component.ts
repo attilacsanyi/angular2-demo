@@ -6,7 +6,7 @@ import { AppState } from '../app.store';
 import { IncrementCounterAction, DecrementCounterAction, ResetCounterAction } from './counter.action';
 
 @Component({
-  templateUrl: 'counter.component.html',
+  templateUrl: './counter.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CounterComponent implements OnInit {
