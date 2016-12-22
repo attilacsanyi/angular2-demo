@@ -5,8 +5,8 @@
   "angular-cli": {},
   "scripts": {
     "lite-server": "lite-server",
-    "build-prod": "ng build --prod",
-    "start": "ng serve --host 0.0.0.0 --port 3200 --live-reload-port 49153",
+    "build-prod": "ng build --prod --aot",
+    "start": "ng serve --aot --host 0.0.0.0 --port 3200 --live-reload-port 49153",
     "lint": "tslint \"src/**/*.ts\"",
     "test": "ng test --watch=false",
     "tdd": "ng test",
