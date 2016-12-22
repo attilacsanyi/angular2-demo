@@ -1,7 +1,7 @@
-import { ActionReducer, Action } from '@ngrx/store';
+import { Action } from '@ngrx/store';
 import { IncrementCounterAction, DecrementCounterAction, ResetCounterAction } from './counter.action';
 
-export const counterReducer: ActionReducer<number> = (state = 0, action: Action) => {
+export function counterReducer(state = 0, action: Action) {
   switch (action.constructor) {
     case IncrementCounterAction:
       return state + (<IncrementCounterAction>action).payload.amount;
