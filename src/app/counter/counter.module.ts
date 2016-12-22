@@ -12,4 +12,4 @@ import { routing } from './counter.routing';
   imports: [SharedModule, routing],
   declarations: [CounterComponent]
 })
-export default class CounterModule { }
+export class CounterModule { }
