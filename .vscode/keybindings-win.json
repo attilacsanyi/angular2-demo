@@ -26,5 +26,9 @@
     {
         "key": "ctrl+n",
         "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "alt+z",
+        "command": "workbench.action.toggleZenMode"
     }
 ]
