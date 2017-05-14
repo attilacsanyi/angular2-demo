@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeModule } from './home/home.module';
 
 // Components
@@ -14,7 +15,7 @@ import { store } from './app.store';
 @NgModule({
     imports: [
         // Angular
-        BrowserModule,
+        BrowserModule, BrowserAnimationsModule,
 
         HomeModule.forRoot(),
         routing,

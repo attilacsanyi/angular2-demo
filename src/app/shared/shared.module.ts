@@ -2,7 +2,6 @@ import { RouterModule } from '@angular/router';
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 // Angular
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -17,7 +16,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
     imports: [
         // Angular
-        CommonModule, RouterModule, BrowserAnimationsModule,
+        CommonModule, RouterModule,
 
         // Material
         MaterialModule,
