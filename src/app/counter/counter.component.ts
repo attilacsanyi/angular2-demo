@@ -1,5 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 
 import { Store } from '@ngrx/store';
 import { AppState } from '../app.store';
@@ -12,7 +12,7 @@ import { IncrementCounterAction, DecrementCounterAction, ResetCounterAction } fr
 export class CounterComponent implements OnInit {
 
   counter: Observable<number>;
-  amount: number = 34;
+  amount = 34;
 
   constructor(private _store: Store<AppState>) {
   }

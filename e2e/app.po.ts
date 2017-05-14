@@ -1,6 +1,4 @@
-import { browser, element, by } from 'protractor/globals';
-
-export class Angular2DemoPage {
+export class AngularDemoPage {
   navigateTo() {
     return browser.get('/');
   }

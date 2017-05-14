@@ -29,10 +29,10 @@ export const store: any[] = [
    * Store devtools instrument the store retaining past versions of state
    * and recalculating new states. This enables powerful time-travel
    * debugging.
-   * 
+   *
    * To use the debugger, install the Redux Devtools extension for either
    * Chrome or Firefox
-   * 
+   *
    * See: https://github.com/zalmoxisus/redux-devtools-extension
    */
   StoreDevtoolsModule.instrumentOnlyWithExtension(),
